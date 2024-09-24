@@ -30,7 +30,7 @@ namespace CSharp.AvgOfArray
         public static double Avg(int[] a)
         {
             double average = 0;
-            foreach (int i in a)
+            foreach (var i in a)
                 average += i;
             return average / a.Length;
         }
