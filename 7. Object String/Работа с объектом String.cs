@@ -4,13 +4,15 @@ namespace CSharp.String
     class MainClass
     {
         static void Main()
-        {
+        { 
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.SetWindowSize(120, 30);
+            Console.Clear();    
             Console.Title = "The title has changed!";
             string s = "Это простая строка";
             Console.WriteLine(s);
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.SetWindowSize(50, 30);
+           
             string result = string.Format("Длина строки: {0}", s.Length);
             Console.WriteLine(result);
 
