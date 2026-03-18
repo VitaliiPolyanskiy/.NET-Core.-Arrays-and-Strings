@@ -6,8 +6,8 @@ namespace CSharpApplication.two_dimensional_array
     {
         static void Main()
         {
-            // создание двумерного массива из 5x5 элементов типа int
-            // все элементы массива инициализируются нулями
+            // Створення двомірного масиву з 5x5 елементів типу int 
+            // Усі елементи масиву ініціалізуються нулями
             int[,] intArray = new int[5, 5];
             for (int i = 0; i < intArray.GetLength(0); i++)
             {
@@ -18,7 +18,7 @@ namespace CSharpApplication.two_dimensional_array
                 Console.WriteLine();
             }
             Console.WriteLine();
-            // создание + инициализация массива 3x2
+            // Створення та ініціалізація масиву 3x2
             int[,] intArray2 = new int[3, 2] { { 0, 3 }, { 7, 17 }, { 25, 0 } };
             for (int i = 0; i < 3; i++)
             {
@@ -29,7 +29,7 @@ namespace CSharpApplication.two_dimensional_array
                 Console.WriteLine();
             }
             Console.WriteLine();
-            // создание + инициализация (укороченный вариант)
+            // Створення та ініціалізація (укорочений варіант)
             int[,,] intArray3 = new int[3, 2, 2] { { { 0, 3 }, { 7, 17 } }, { { 25, 0 }, { 0, 3 } }, { { 7, 17 }, { 25, 0 } } };
             for (int i = 0; i < intArray3.GetLength(0); i++)
             {
@@ -41,12 +41,12 @@ namespace CSharpApplication.two_dimensional_array
                     }
                 }
             }
-            // Можно объявить массив без инициализации
+            // Можна оголосити масив без ініціалізації
             int[,] arr3;
-            // Но его нельзя использовать, пока он не создан с помощью оператора new
+            // Але його не можна використовувати, доки він не створений за допомогою оператора new
             /*
-            arr3[0,0] = 0; // Ошибка компиляции
-            arr3 = { {0, 3}, {7, 17}, {25, 0} }; // Ошибка компиляции
+            arr3[0,0] = 0; // Помилка компіляції
+            arr3 = { {0, 3}, {7, 17}, {25, 0} }; // Помилка компіляції
             */
             arr3 = new int[,] { { 0, 3 }, { 7, 17 }, { 25, 0 } };
             arr3[0, 0] = 10;

@@ -6,14 +6,14 @@ namespace CSharp.AvgOfArray
         static void Main()
         {
             int count = 10;
-            Console.WriteLine("Введите количество элементов массива");
+            Console.WriteLine("Enter the number of array elements: ");
             try
             {
                 count = Convert.ToInt32(Console.ReadLine());
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message + "принимаем количество элементов = 10");
+                Console.WriteLine(ex.Message + " Let's take the number of elements equal to 10.");
             }
             Random r = new();
             int[] a = new int[count];
@@ -24,7 +24,7 @@ namespace CSharp.AvgOfArray
             }
 
             Avg(a);
-            Console.WriteLine("\nСреднее значение = {0}", Avg(a));
+            Console.WriteLine("\nAverage value = {0}", Avg(a));
 
         }
         public static double Avg(int[] a)

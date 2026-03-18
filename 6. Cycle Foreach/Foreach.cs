@@ -15,17 +15,17 @@ namespace Foreach
                 [1,2,3,4]
             ];
 
-            Console.WriteLine("Одномерный массив");
+            Console.WriteLine("One-dimensional array");
             foreach (int i in myArr1)
             {
                 Console.Write(i + " ");
             }
-            Console.WriteLine("\nДвумерный массив");
+            Console.WriteLine("\nTwo-dimensional array");
             foreach (int i in myArr2)
             {
                 Console.Write(i + " ");
             }
-            Console.WriteLine("\nРваный массив");
+            Console.WriteLine("\nJagged array");
             foreach (int[] arr in myArr3)
             {
                 foreach (int j in arr)
