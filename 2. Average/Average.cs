@@ -23,7 +23,7 @@ namespace CSharp.AvgOfArray
                 Console.Write("{0,4}", a[i]);
             }
 
-            Console.WriteLine("\nAverage value = {0}", Avg(a));
+            Console.WriteLine($"\nAverage value = {Avg(a)}");
 
         }
         public static double Avg(int[] a)

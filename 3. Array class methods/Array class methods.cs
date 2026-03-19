@@ -6,7 +6,7 @@ namespace CSharpApplication.methodsOfArray
     {
         static void Main()
         {
-            int[] ar = new int[10];
+            int[] ar = new int[20];
             Random rnd = new();
             Console.WriteLine("Original integer array: ");
             for (int i = 0; i < ar.Length; i++)
