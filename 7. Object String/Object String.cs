@@ -16,7 +16,7 @@ namespace CSharp.String
             string result = string.Format("Line length: {0}", s.Length);
             Console.WriteLine(result);
 
-            string t = s.Substring(10, 6); // Повертає підрядок із 7 символів, починаючи з 4 позиції
+            string t = s.Substring(10, 6); // Повертає підрядок із 6 символів, починаючи з 10 позиції
             Console.WriteLine(t);
             Console.WriteLine(s[8]);
 
